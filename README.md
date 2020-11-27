@@ -1,4 +1,4 @@
-There are two ideas. Since the second idea is a bit ambitious and we have a lot of uncertainty about whether we would be able to realize it we also included a more reasonable idea which is idea 1. If you read and grade just on idea please grade idea 1. If you are willing to look at both ideas that would be great.
+In the following we present two project ideas. Since the second idea is a bit ambitious and we have a lot of uncertainty about whether we would be able to realize it we also included a more reasonable idea which is idea 1. If you read and grade just on idea please grade idea 1. If you are willing to look at both ideas that would be great.
 
 # Idea 1
 ## Title:
