@@ -1,3 +1,6 @@
+There are two ideas. Since the second idea is a bit ambitious and we have a lot of uncertainty about whether we would be able to realize it we also included a more reasonable idea which is idea 1. If you read and grade just on idea please grade idea 1. If you are willing to look at both ideas that would be great.
+
+# Idea 1
 ## Title:
 Testing BFS sampling approach as a generation method of representative samples
 
@@ -31,6 +34,7 @@ The authors of the paper claim that the BFS sampling approach could not generate
 - Viktor will prepare video
 
 
+# Idea 2
 ## Title:
 1.	Title: Testing exposure hypothesis for exposure to Tweets on global warming
 ## Abstract: 
