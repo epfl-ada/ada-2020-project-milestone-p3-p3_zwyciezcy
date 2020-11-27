@@ -21,7 +21,7 @@ The authors of the paper claim that the BFS sampling approach could not generate
 **Week 2:** Verification of chosen prepositions
 **Week 3:** Prepare report and a short video
 
-Organisation within the team:
+## Organisation within the team:
 - Viktor will find out how to get an access to Twitter API
 - Maciek will write BFS and the setup for fetching data using Twitter API
 - Maciek will clean the data and verify two prepositions (usage and structure)
