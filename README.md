@@ -33,6 +33,10 @@ The authors of the paper claim that the BFS sampling approach could not generate
 - Maciek will organise and clean the code, and work on making a data story notebook
 - Viktor will prepare video
 
+## Questions to TA:
+- Is it ambitious enough?
+- Should we increase or reduce the number of tested prepositions?
+
 
 # Idea 2
 ## Title:
@@ -45,9 +49,9 @@ The paper explores propositions on a randomly selected dataset. We propose to re
 2. Think about a meaningful way to describe the time evolution of user’s Tweet labels. And look for people who changed their mind about global warming.
 
 ## Proposed datasets
-o	Testing Propositions Derived from Twitter Studies dataset from the paper for comparing our results (if replicating figure 6 is too time consuming we could skip this part and use a screenshot for comparing results).
-o	Build a dataset of users Tweeting about the environment using the Twitter API (think about how much time this will take if we use randomly generated Twitter ids, if it takes too long we could employ a BFS algorithm but then the dataset would not allow generalizability)
-o	Twitter Climate Change Sentiment Dataset from Kaggle, https://www.kaggle.com/edqian/twitter-climate-change-sentiment-dataset
+-	Testing Propositions Derived from Twitter Studies dataset from the paper for comparing our results (if replicating figure 6 is too time consuming we could skip this part and use a screenshot for comparing results).
+-	Build a dataset of users Tweeting about the environment using the Twitter API (think about how much time this will take if we use randomly generated Twitter ids, if it takes too long we could employ a BFS algorithm but then the dataset would not allow generalizability)
+-	Twitter Climate Change Sentiment Dataset from Kaggle, https://www.kaggle.com/edqian/twitter-climate-change-sentiment-dataset
 
 ## Methods
 NLP sentiment analysis model: We will do research on what model would perform well on classifying Tweets. We will consider random tree, and SVM as well as other models found in literature.
@@ -58,12 +62,12 @@ Time series analysis: The labels of a user’s Tweets in time define a time seri
 We realize that this project proposal is full of wild ideas. We are prepared to find out that the data does not allow to realize some of these ideas. We will clarify what we do as we explore the data.
 
 ## Proposed timeline
-Week 1: One of us will build the dataset and the other will train the NLP model.
-Week 2: We will work together on plotting the probability of Tweet/Retweet of a certain category as a function to exposure to difference categories of Tweet.
-Week 3: Explore interesting data analysis opportunities, preparing the data story and short video.
+- **Week 1:** One of us will build the dataset and the other will train the NLP model.
+- **Week 2:** We will work together on plotting the probability of Tweet/Retweet of a certain category as a function to exposure to difference categories of Tweet.
+- **Week 3:** Explore interesting data analysis opportunities, preparing the data story and short video.
 
 ## Organisation within the team:
-o	Viktor will work on building the dataset using the Twitter API and Maciek will train a NLP model for the classification task using the Kaggle dataset
-o	Viktor will work on making plots similar to figure 6 in the paper and Maciek will explore the possibilities of data analysis using the opinion time series
-o	Viktor will work on making the video while Maciek will work on making a data story notebook
+-	Viktor will work on building the dataset using the Twitter API and Maciek will train a NLP model for the classification task using the Kaggle dataset
+-	Viktor will work on making plots similar to figure 6 in the paper and Maciek will explore the possibilities of data analysis using the opinion time series
+-	Viktor will work on making the video while Maciek will work on making a data story notebook
 
