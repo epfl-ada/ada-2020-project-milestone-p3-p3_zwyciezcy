@@ -17,9 +17,9 @@ The authors of the paper claim that the BFS sampling approach could not generate
 **Verification of prepositions** We have decided to focus on one preposition from each section, i.e. "Circadian rhythms" (usage), "Dunbar’s number" (structure), and "Influential hypothesis" (information diffusion).
 
 ## Proposed timeline
-**Week 1:** Dataset generation
-**Week 2:** Verification of chosen prepositions
-**Week 3:** Prepare report and a short video
+- **Week 1:** Dataset generation
+- **Week 2:** Verification of chosen prepositions
+- **Week 3:** Prepare report and a short video
 
 ## Organisation within the team:
 - Viktor will find out how to get an access to Twitter API
