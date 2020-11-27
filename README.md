@@ -1,4 +1,4 @@
-In the following we present two project ideas. Since the second idea is a bit ambitious and we have a lot of uncertainty about whether we would be able to realize it we also included a more reasonable idea which is idea 1. If you read and grade just on idea please grade idea 1. If you are willing to look at both ideas that would be great.
+In the following we present two project ideas. Since the second idea is a bit ambitious and we have a lot of uncertainty about whether we would be able to realize it we also included a more reasonable idea which is idea 1. If you read and grade just one idea please grade idea 1. If you are willing to look at both ideas that would be great.
 
 # Idea 1
 
@@ -6,7 +6,7 @@ In the following we present two project ideas. Since the second idea is a bit am
 Testing BFS sampling approach as a generation method of representative samples
 
 ## Abstract: 
-The authors of the paper claim that the BFS sampling approach could not generate representative samples. Our aim is to verify this thesis. Hence, we are going construct a new dataset, then validate its representativeness using Kolmogorov-Smirnov test as the authors in the paper, and finally repeat some investigations made by the Hai L. et al. In order to generate the dataset we will randomly generate some Twitter IDs and check if there exists a corresponding Twitter user. Then we will use those egos as sources to launch BFSs. The nodes of a search graph are Twitter users while edges are both follower and followee relationships. We will generate a dataset which size will be approximately equal to the one used by the authors of the paper. Finally, using new dataset we will repeat verifications of some prepositions. 
+The authors of the paper claim that the BFS sampling approach could not generate representative samples. Our aim is to verify this assertion. Hence, we are going construct a new dataset, then validate its representativeness using Kolmogorov-Smirnov test as the authors in the paper, and finally repeat some investigations made by the Hai L. et al. In order to generate the dataset we will randomly generate some Twitter IDs and check if there exists a corresponding Twitter user. Then we will use those egos as sources to launch BFSs. The nodes of a search graph are Twitter users while edges are both follower and followee relationships. We will generate a dataset which size will be approximately equal to the one used by the authors of the paper. Finally, using new dataset we will repeat verifications of some prepositions. 
 
 ## Research questions
 1. Is the BFS sampling approach representative based on Kolmogorov-Smirnov test?
@@ -45,11 +45,11 @@ The authors of the paper claim that the BFS sampling approach could not generate
 Testing exposure hypothesis for exposure to Tweets on global warming
 
 ## Abstract: 
-The paper explores propositions on a randomly selected dataset. We propose to replicate the results on the exposure hypothesis for exposures to tweets about global warming. To achieve this we will train a NLP algorithm on the Kaggle “Twitter Climate Change Sentiment Dataset“. The goal is to classify Tweets about global warming in the following categories: i) (News) the Tweet is news ii) (Pro) the Tweet supports the belief of man-made climate change iii) (Neutral) the tweet neither supports nor refutes the belief of man-made climate change, iv) (Anti) the tweet does not believe in man-made climate change. This model will then be applied to new Tweets to label them. The Twitter API will be used to build a dataset of users selected on the basis of whether some words related to climate change appear in their Tweets. The followers and followee of these accounts will be added to the dataset along with their Tweets and the other required information. The method used to build this dataset will be to generate random user ids and test if they exist. Only users who’s language is English will be retained.
+We propose to study the exposure hypothesis on the topic of global warming. We will train a NLP algorithm on the Kaggle “Twitter Climate Change Sentiment Dataset“ to classify Tweets about global warming in 4 categories: News) news Pro) belief in man-made climate change Neutral) neither supports nor refutes the belief of man-made climate change and Anti) doesn't believe in man-made climate change. A dataset will be built by randomly selecting accounts whose Tweets mention at least one neutral word closely related to global warming. The relation between exposure to Tweets of different categories and user's Tweets will be studied. Changes of opinions will also be examined by fitting linear models to Pro, Neutral and Anti label timeseries. Characteristics of accounts and clusteres where people change their opinions will be sought.
 
 ## Research questions
-1. What is the probability of retweeting Tweets about global warming as a function of the number of exposures to Tweets about global warming? How do the results change for exposure to Tweets about global warming with the label Pro, Neutral or Anti ? How do the results change for probability of retweeting Tweets with the labels Pro, Neutral or Anti ?
-2. Think about a meaningful way to describe the time evolution of user’s Tweet labels. And look for people who changed their mind about global warming.
+1. What is the probability of retweeting Tweets or Tweeting about global warming as a function of the number of exposures to Tweets about global warming? How do the results change for exposure to Tweets about global warming with the label News, Pro, Neutral or Anti ? How do the results change for probability of retweeting Tweets with the labels News, Pro, Neutral or Anti ?
+2. What are the characteristics of accounts and clusteres where people change their opinions ? Can causality be established between these characteristics or is it mere correlations ?
 
 ## Proposed datasets
 -	Testing Propositions Derived from Twitter Studies dataset from the paper for comparing our results (if replicating figure 6 is too time consuming we could skip this part and use a screenshot for comparing results).
@@ -57,12 +57,15 @@ The paper explores propositions on a randomly selected dataset. We propose to re
 -	Twitter Climate Change Sentiment Dataset from Kaggle, https://www.kaggle.com/edqian/twitter-climate-change-sentiment-dataset
 
 ## Methods
-NLP sentiment analysis model: We will do research on what model would perform well on classifying Tweets. We will consider random tree, and SVM as well as other models found in literature.
-Data collection: We have signed up to the Twitter API to build a dataset including the number of followees, the number of followers, a list of Tweets including words like “climate change” in some time window (up to 10 years if this is possible), a list of the dates of those Tweets, probability of retweeting Tweets with each of the labels. An obstacle to building this dataset might be the number of requests that can be made through the Twitter API (up to 3200 requests / hour).
-Data analysis: We are interested on how exposure to Tweets of the 4 different categories (New, Pro, Neutral, Anti) influence users to Retweet or Tweet messages of different categories. We might be able to do dimensionality reduction to isolate important effects.
+### NLP sentiment analysis model: 
+We will do research on what model would perform well on classifying Tweets. We will consider random tree, and SVM as well as other models found in literature.
+### Data collection: 
+We have signed up to the Twitter API to build a dataset including the number of followees, the number of followers, a list of Tweets including words like “climate change” in some time window (up to 10 years if this is possible), a list of the dates of those Tweets, probability of retweeting Tweets with each of the labels. An obstacle to building this dataset might be the number of requests that can be made through the Twitter API (up to 3200 requests / hour).
+### Data analysis: 
+We are interested on how exposure to Tweets of the 4 different categories (New, Pro, Neutral, Anti) influence users to Retweet or Tweet messages of different categories. We might be able to do dimensionality reduction to isolate important effects.
 Time series analysis: The labels of a user’s Tweets in time define a time series. We could imagine keeping only the labels corresponding to the categories Pro and Anti and fitting a linear model. We will refer to this time series as the “opinion time series”. The slope thus obtained would be a good proxy for change of opinion. We could then study what causes users to change their opinions. Is it the characteristics of the cluster they are part of? Or is it their individual properties that cause them to change their mind? We will have to think about how we can infer causality instead of just correlation.
 
-We realize that this project proposal is full of wild ideas. We are prepared to find out that the data does not allow to realize some of these ideas. We will clarify what we do as we explore the data.
+We realize that this project proposal is full of wild ideas. We are prepared to discover that the data does not allow to realize some of these ideas. We will clarify what we do as we explore the data.
 
 ## Proposed timeline
 - **Week 1:** One of us will build the dataset and the other will train the NLP model.
@@ -75,5 +78,5 @@ We realize that this project proposal is full of wild ideas. We are prepared to 
 -	Viktor will work on making the video while Maciek will work on making a data story notebook
 
 ## Questions to TA:
-- Is it too ambitious?
-- Do you think the number of requests limit on the Twitter API is going to be a problem if we want to build a large enough dataset ?
+- Is this project too ambitious?
+- Do you think the number of requests limit on the Twitter API is going to be a problem if we want to build a large enough dataset ? Should we use BFS instead of randomly generating Tweeter ids ?
