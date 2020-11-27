@@ -1,6 +1,7 @@
 In the following we present two project ideas. Since the second idea is a bit ambitious and we have a lot of uncertainty about whether we would be able to realize it we also included a more reasonable idea which is idea 1. If you read and grade just on idea please grade idea 1. If you are willing to look at both ideas that would be great.
 
 # Idea 1
+
 ## Title:
 Testing BFS sampling approach as a generation method of representative samples
 
@@ -39,8 +40,10 @@ The authors of the paper claim that the BFS sampling approach could not generate
 
 
 # Idea 2
+
 ## Title:
-1.	Title: Testing exposure hypothesis for exposure to Tweets on global warming
+Testing exposure hypothesis for exposure to Tweets on global warming
+
 ## Abstract: 
 The paper explores propositions on a randomly selected dataset. We propose to replicate the results on the exposure hypothesis for exposures to tweets about global warming. To achieve this we will train a NLP algorithm on the Kaggle “Twitter Climate Change Sentiment Dataset“. The goal is to classify Tweets about global warming in the following categories: i) (News) the Tweet is news ii) (Pro) the Tweet supports the belief of man-made climate change iii) (Neutral) the tweet neither supports nor refutes the belief of man-made climate change, iv) (Anti) the tweet does not believe in man-made climate change. This model will then be applied to new Tweets to label them. The Twitter API will be used to build a dataset of users selected on the basis of whether some words related to climate change appear in their Tweets. The followers and followee of these accounts will be added to the dataset along with their Tweets and the other required information. The method used to build this dataset will be to generate random user ids and test if they exist. Only users who’s language is English will be retained.
 
