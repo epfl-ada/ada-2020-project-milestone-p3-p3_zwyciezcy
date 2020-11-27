@@ -74,3 +74,6 @@ We realize that this project proposal is full of wild ideas. We are prepared to 
 -	Viktor will work on making plots similar to figure 6 in the paper and Maciek will explore the possibilities of data analysis using the opinion time series
 -	Viktor will work on making the video while Maciek will work on making a data story notebook
 
+## Questions to TA:
+- Is it too ambitious?
+- Do you think the number of requests limit on the Twitter API is going to be a problem if we want to build a large enough dataset ?
