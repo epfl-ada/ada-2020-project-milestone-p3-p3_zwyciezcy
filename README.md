@@ -13,8 +13,9 @@ The authors of the paper claim that the BFS sampling approach could not generate
 - Dataset generated in a way described below
 
 ## Methods
-**Dataset generation** We will try different number of sources (100-1000) for BFS and choose the best dataset using Kolmogorov-Smirnov test. To download the data we will use Twitter API
-**Verification of prepositions** We have decided to focus on one preposition from each section, i.e. "Circadian rhythms" (usage), "Dunbar’s number" (structure), and "Influential hypothesis" (information diffusion).
+- **Dataset generation** We will try different number of sources (100-1000) for BFS and choose the best dataset using Kolmogorov-Smirnov test. To download the data we will use Twitter API
+
+- **Verification of prepositions** We have decided to focus on one preposition from each section, i.e. "Circadian rhythms" (usage), "Dunbar’s number" (structure), and "Influential hypothesis" (information diffusion).
 
 ## Proposed timeline
 - **Week 1:** Dataset generation
