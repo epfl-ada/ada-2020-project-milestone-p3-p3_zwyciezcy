@@ -36,4 +36,4 @@ It is said that positive people attract each other. In this project we will inve
 - establishing connection with Twitter's server
 - trying to fetching tweets' text
 - writing second and third section of report
-- updating READ.me  
+- updating README.md  
