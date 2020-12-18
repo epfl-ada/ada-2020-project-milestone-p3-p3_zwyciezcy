@@ -1,5 +1,5 @@
 ## Title:
-Tweet_analysis: Do positive people cluster together?
+Tweet analysis: do positive people cluster together?
 
 ## Abstract: 
 It is said that positive people attract each other. In this project we will investigate this claim using the data set from ref. We will try to understand how positive or negative people cluster together as well as see if a change in the sentiment of a user is correlated to a change of sentiment of his followers and followee. We will look at how the average sentiment of tweets change with the seasons across a year.
