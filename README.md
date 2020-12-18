@@ -2,7 +2,7 @@
 Tweet_analysis: Do positive people cluster together?
 
 ## Abstract: 
-The authors of the paper claim that the BFS sampling approach could not generate representative samples. Our aim is to verify this assertion. Hence, we are going construct a new dataset, then validate its representativeness using Kolmogorov-Smirnov test as the authors in the paper, and finally repeat some investigations made by the Hai L. et al. In order to generate the dataset we will randomly generate some Twitter IDs and check if there exists a corresponding Twitter user. Then we will use those egos as sources to launch BFSs. The nodes of a search graph are Twitter users while edges are both follower and followee relationships. We will generate a dataset which size will be approximately equal to the one used by the authors of the paper. Finally, using new dataset we will repeat verifications of some prepositions. 
+It is said that positive people attract each other. In this project we will investigate this claim using the data set from ref. We will try to understand how positive or negative people cluster together as well as see if a change in the sentiment of a user is correlated to a change of sentiment of his followers and followee. We will look at how the average sentiment of tweets change with the seasons across a year.
 
 ## Research questions
 1. How to define people's positiveness?
